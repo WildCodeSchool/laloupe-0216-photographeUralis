@@ -1,0 +1,332 @@
+/*supprimer les marge et padding sur tout le site*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*GRANDS ELEMENTS DU SITE*/
+html
+{
+    position: relative;
+    border: 20px solid rgba(234,100,12,1)
+}
+/*pseudo element pour le background transparent*/
+html:before
+{
+  position: absolute;
+  content: "";
+  background: url("img/newspapers.jpg");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; 
+}
+body
+{
+    display: inline-block;
+    margin-left: 10%;
+    width: 70%;
+}
+header
+{
+    position: relative;
+    margin: 21px 0 7px 0;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0 40px;
+}
+#logo
+{
+    position: relative;
+    margin: 15px 0;
+    width: 35%;
+    /*border: 1px solid blue;*/
+}
+
+/*Solgan imbriqué dans une flex container*/
+#slogan
+{
+    position: absolute;
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    /*border: 3px solid red;*/
+}
+#flexslogan
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid green;*/
+}
+#txtslogan
+{
+    font-size: 100%;
+    color: rgb(234,100,12);
+    text-shadow: 1px 1px 2px black;
+    font-size: 200%;
+    font-family: 'impact', sans-serif;
+    letter-spacing: 1px;
+    /*border: 1px solid blue;*/
+}
+
+/*Petit logo*/
+#logoarbre
+{
+    width: 8%;
+    position: fixed;
+    left: 2.2%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px;
+}
+
+/*Container pour les element abonnement*/
+#abonnement
+{
+    background-color: rgba(255,255,255,0.4);
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+    border: 3px solid rgb(234,100,12);
+    right: 3.5%;
+    top: 7%;
+    width: 15%;
+    /*border: 1px solid blue;*/
+}
+#abonnement p
+{
+    margin: 20px 5px;
+    text-align: center;
+    font-family: 'impact', sans-serif;
+    font-size: 200%;
+    color: rgb(234,100,12);
+}
+#abonnement a
+{
+    width: 80%;
+    /*border: 1px solid blue;*/
+}
+#abonnement a:hover
+{
+    border-top: 5px solid rgb(234,100,12);
+    border-bottom: 5px solid rgb(234,100,12);
+    border-radius: 20px;
+    width: 75%;
+}
+.logoabt
+{
+    width: 100%;
+}
+
+/*container pour les element de valuer*/
+#valeurs
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7px 0;
+    background-color: #FFF;
+    box-shadow: 0 0 40px rgb(234,100,12);
+    /*border: 1px solid red;*/
+}
+#valeurs img
+{
+    width: 45%;
+    /*border: 1px solid red;*/
+}
+
+/*container pour les elements du trombinoscope*/
+#trombi
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 7px 0;
+    box-shadow: 0 0 40px;
+    /*border: 1px solid white;*/
+}
+#trombi div
+{
+    text-align: center;
+    width: 40%;
+    margin: 30px 20px;
+    /*border: 3px solid red;*/
+}
+#trombi img
+{
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 60%;
+    box-shadow: 0 0 40px;
+}
+#trombi p
+{
+    width: 100%;
+    text-align: justify; 
+    /*border: 1px solid blue;*/
+}
+
+/*mise en page des deux grandes photo*/
+#photo1, #photo2
+{
+    width: 100%;
+    margin: 7px 0;
+    box-shadow: 0 0 40px;
+}
+#barre
+{
+    text-align: center;
+    background-color: rgb(234,100,12);
+    width : 100%;
+    height: 10px;
+    margin: 20px 0;
+    border-radius: 300%;
+}
+#barre img
+{
+    height: 40px;
+    margin-top: -14px;
+}
+
+/*MISE EN PAGE DU PIED DE PAGE*/
+footer
+{
+    margin: 7px 0 21px 0;
+}
+#titrefooter
+{
+    width: 100%;
+    text-align: center;
+    font-family: 'impact', sans-serif;
+    font-size: 300%;
+    margin: 40px 0 30px 0;
+}
+#objectifs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 14px 0;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 40px;
+    /*border: 1px solid blue;*/
+}
+#nbabonnes
+{
+    display: inline-block;
+    top: 0;
+    line-height: 80px;
+    font-family: 'impact', sans-serif;
+    color: rgb(234,100,12);
+    font-size: 200%;
+    /*border: 1px solid blue;*/
+}
+#objectifs img
+{
+    height: 60px;
+    margin: 0 30px;
+    /*border: 1px solid green;*/
+}
+#objectifs a
+{
+    background-color: rgb(234,100,12);
+    line-height: 60px;
+    font-family: 'impact', sans-serif;
+    color: #FFF;
+    padding: 0 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    /*border: 1px solid blue;*/
+}
+#objectifs a:hover
+{
+    background-color: #FFF;
+    color : rgb(234,100,12);
+    border: 4px solid rgb(234,100,12);
+}
+#txtobjectif
+{
+    width: 100%;
+    font-size: 100%;
+    font-family: 'impact', sans-serif;
+    margin: 10px 0;
+}
+#abtfooter
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 0;
+    /*border: 3px solid blue;*/
+}
+#abtfooter a
+{
+    display: inline-block;
+    width: 30%;
+    /*border: 3px solid blue;*/
+}
+#abtfooter a:hover
+{
+    border-top: 5px solid rgb(234,100,12);
+    border-bottom: 5px solid rgb(234,100,12);
+    border-radius: 30px;
+    width: 28%;
+}
+#abtfooter img
+{
+    width: 100%;
+}
+
+@media (max-width: 1280px)
+{
+    header
+    {
+        text-align: center;
+    }
+    #logo
+    {
+        display: inline-block;
+        width: 60%;
+    }
+    #slogan
+    {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+        /*border: 1px solid blue;*/
+    }
+    #txtslogan
+    {
+        font-size: 100%;
+    }
+    #logoarbre
+    {
+        left: 3.8%;
+    }
+    #abonnement
+    {
+        right: 4.5%;
+    }
+    #abonnement p
+    {
+        font-size: 100%;
+    }
+}
