@@ -8,11 +8,11 @@
 /*GRANDS ELEMENTS DU SITE*/
 html
 {
-    position: relative;
+    display: inline-block;
     border: 20px solid rgba(234,100,12,1)
 }
 /*pseudo element pour le background transparent*/
-html:before
+/*html:before
 {
   position: absolute;
   content: "";
@@ -23,12 +23,13 @@ html:before
   bottom: 0;
   right: 0;
   z-index: -1; 
-}
+}*/
 body
 {
     display: inline-block;
     margin-left: 10%;
     width: 70%;
+    height: 100%;
 }
 header
 {
@@ -77,13 +78,32 @@ header
 }
 
 /*Petit logo*/
-#logoarbre
+/*#logoarbre
 {
     width: 8%;
     position: fixed;
     left: 2.2%;
     border-radius: 15px;
     box-shadow: 0 0 20px;
+}*/
+
+.hidden {
+    position: absolute;
+    top: -9999999px;
+}
+
+#bottommark {
+    position: absolute;
+    bottom: 0;
+}
+
+#animation { 
+    background-repeat: no-repeat;
+    position : fixed; 
+    top: 50px;
+    width: 8%;
+    left: 2.2%;
+    margin: 0 auto;
 }
 
 /*Container pour les element abonnement*/
@@ -208,6 +228,7 @@ header
 /*MISE EN PAGE DU PIED DE PAGE*/
 footer
 {
+    position: relative;
     margin: 7px 0 21px 0;
 }
 #titrefooter
@@ -310,9 +331,9 @@ footer
 {
     background-color: #FFF;
     position: absolute;
-    right: 0.5%;
-    bottom: 0;
-    width: 18%;
+    right: -28%;
+    bottom: -5%;
+    width: 26%;
     height: 600px;
     /*border: 1px solid blue;*/
 }
@@ -320,9 +341,9 @@ footer
 {
     background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
     position: absolute;
-    right: 0.5%;
-    bottom: 599px;
-    width: 18%;
+    right: -28%;
+    bottom: 570px;
+    width: 26%;
     height: 150px;
     /*border: 1px solid red;*/
 }
