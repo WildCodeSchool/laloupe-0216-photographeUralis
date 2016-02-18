@@ -9,11 +9,7 @@
     <body>
         <header>
             <img src="img/logo.png" alt="logo de ruralis magasine" id="logo" />
-            <section id="slogan">
-                <div id="flexslogan">
-                    <p id="txtslogan">Demain s'invente dans les campagnes</p>
-                </div>
-            </section>
+            <p id="slogan">Demain s'invente dans les campagnes</p>
         </header>
         
         <div id="barre">
@@ -33,7 +29,7 @@
 
         <div id="bottommark"></div>
         
-        
+        <div id="containerabt">
         <section id="abonnement">
             <p>S'ABONNER</p>
             <a href="img/Ruralis_N%C2%B00_Version_0-4.pdf" target="_blank">
@@ -46,6 +42,7 @@
                 <img class="logoabt" src="img/logo250.png" alt="logo250"  />
             </a>
         </section>
+        </div>
         
         <section>
             <img src="img/photo1.jpg" alt="photo1" id="photo1" />
@@ -61,20 +58,20 @@
         </section>
         
         <section id="trombi">
-            <div>   
-                <img src="img/identite1.png" alt="identite1" id="id1" />
+            <div id="id1">   
+                <img src="img/identite1.png" alt="identite1" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor metus massa, in malesuada lacus sagittis ac. Nam blandit, lorem eget cursus venenatis.</p>
             </div>
-            <div>
-                <img src="img/identite2.png" alt="identite1" id="id1" />
+            <div id="id2">
+                <img src="img/identite2.png" alt="identite1" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor metus massa, in malesuada lacus sagittis ac. Nam blandit, lorem eget cursus venenatis.</p>
             </div>
-            <div>
-                <img src="img/identite4.png" alt="identite1" id="id1" />
+            <div id="id3">
+                <img src="img/identite4.png" alt="identite1" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor metus massa, in malesuada lacus sagittis ac. Nam blandit, lorem eget cursus venenatis.</p>
             </div>
-            <div>
-                <img src="img/identite5.png" alt="identite1" id="id1" />
+            <div id="id4">
+                <img src="img/identite5.png" alt="identite1" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor metus massa, in malesuada lacus sagittis ac. Nam blandit, lorem eget cursus venenatis.</p>
             </div>
         </section>
@@ -87,10 +84,9 @@
             <p id="titrefooter">S'ABONNER</p>
 
             <section id="objectifs">
-                <p id="nbabonnes">Nombre d'abonné(e)s actuel(le)s :</p>
-                <img src="img/compteur.png" alt="compteur abonnés" />
-                <a href="img/Ruralis_N%C2%B00_Version_0-4.pdf" target="_blank">en savoir plus</a>
+                <p id="nbabonnes">Nombre d'abonné(e)s actuel(le)s : 1234</p>
                 <p id="txtobjectif">OBJECTIF : 1500 abonné(e)s</p>
+                <a href="img/Ruralis_N%C2%B00_Version_0-4.pdf" target="_blank">en savoir plus</a>
             </section>
             <div id="abtfooter">
                 <a href="img/Ruralis_N%C2%B00_Version_0-4.pdf" target="_blank">
@@ -117,7 +113,7 @@
                 var offset1 = $(document).height();
                 var offset = $(window).scrollTop();
                 var lineH = offset1 - $("#bottommark").position().top - offset;
-                var lineHpart = lineHF/8;
+                var lineHpart = lineHF/9;
 
                 $("span").html(lineH);
                     if (lineH > lineHpart*7) {
